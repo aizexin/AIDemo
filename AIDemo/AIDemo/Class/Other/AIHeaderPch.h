@@ -14,4 +14,9 @@
 #else
 #define RJLog(...)
 #endif
+
+//tabBarItem字体大小
+#define AITabBarItemFont [UIFont systemFontOfSize:13]
+// 导航栏标题的字体
+#define AINavigationTitleFont [UIFont boldSystemFontOfSize:20]
 #endif /* PrefixHeader_pch */
