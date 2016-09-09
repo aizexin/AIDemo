@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "AIChooseRootVCTool.h"
+#import <MLTransition/MLTransition.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
 @interface AppDelegate ()
 
 @end
@@ -20,6 +22,10 @@
     [self.window makeKeyAndVisible];
     //选择根控制器
     [AIChooseRootVCTool chooseRootVC];
+    //添加侧滑返回
+    [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];//or MLTransitionGestureRecognizerTypeScreenEdgePan
+    //智能键盘
+    [IQKeyboardManager sharedManager].enable = YES;
     return YES;
 }
 
