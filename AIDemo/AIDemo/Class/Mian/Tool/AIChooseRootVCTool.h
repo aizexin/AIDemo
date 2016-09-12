@@ -11,7 +11,12 @@
 @interface AIChooseRootVCTool : NSObject
 
 /**
- *  选择根控制器
+ *  选择登录页面
  */
-+(void) chooseRootVC;
++(void) chooseLoginVC;
+
+/**
+ *  进入主页
+ */
++(void) choose2Main;
 @end

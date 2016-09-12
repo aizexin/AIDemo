@@ -23,7 +23,7 @@
     self.window.backgroundColor = [UIColor whiteColor];   //设置通用背景颜色
     [self.window makeKeyAndVisible];
     //选择根控制器
-    [AIChooseRootVCTool chooseRootVC];
+    [AIChooseRootVCTool chooseLoginVC];
     //添加侧滑返回
     [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];//or MLTransitionGestureRecognizerTypeScreenEdgePan
     //智能键盘

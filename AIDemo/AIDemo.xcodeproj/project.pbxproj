@@ -30,6 +30,12 @@
 		4536EDB31D8286100090CE23 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536EDAB1D8286100090CE23 /* NSString+Extension.m */; };
 		4536EDB41D8286100090CE23 /* UIBarButtonItem+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536EDAD1D8286100090CE23 /* UIBarButtonItem+AIExtension.m */; };
 		4536EDB51D8286100090CE23 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536EDAF1D8286100090CE23 /* UIImage+Extension.m */; };
+		45A1B2471D86A301006774B9 /* AINewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B2461D86A301006774B9 /* AINewFeatureViewController.m */; };
+		45A1B24E1D86A3A9006774B9 /* AILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B24D1D86A3A9006774B9 /* AILoginViewController.m */; };
+		45A1B2501D86A8C7006774B9 /* BridgeLoop.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45A1B24F1D86A8C7006774B9 /* BridgeLoop.mp4 */; };
+		45A1B2571D86AA9E006774B9 /* KeepAdLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B2521D86AA9E006774B9 /* KeepAdLabel.m */; };
+		45A1B2581D86AA9E006774B9 /* KeepAdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B2541D86AA9E006774B9 /* KeepAdScrollView.m */; };
+		45A1B2591D86AA9E006774B9 /* KeepNewFeatrueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B2561D86AA9E006774B9 /* KeepNewFeatrueView.m */; };
 		45BF0FA41D868B54002CC8CE /* EMAudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF0E8A1D868B53002CC8CE /* EMAudioPlayerUtil.m */; };
 		45BF0FA51D868B54002CC8CE /* EMAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF0E8C1D868B53002CC8CE /* EMAudioRecorderUtil.m */; };
 		45BF0FA61D868B54002CC8CE /* EMCDDeviceManager+Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF0E8E1D868B53002CC8CE /* EMCDDeviceManager+Media.m */; };
@@ -222,6 +228,17 @@
 		4536EDAD1D8286100090CE23 /* UIBarButtonItem+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AIExtension.m"; sourceTree = "<group>"; };
 		4536EDAE1D8286100090CE23 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		4536EDAF1D8286100090CE23 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		45A1B2451D86A301006774B9 /* AINewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AINewFeatureViewController.h; sourceTree = "<group>"; };
+		45A1B2461D86A301006774B9 /* AINewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AINewFeatureViewController.m; sourceTree = "<group>"; };
+		45A1B24C1D86A3A9006774B9 /* AILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILoginViewController.h; sourceTree = "<group>"; };
+		45A1B24D1D86A3A9006774B9 /* AILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AILoginViewController.m; sourceTree = "<group>"; };
+		45A1B24F1D86A8C7006774B9 /* BridgeLoop.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BridgeLoop.mp4; sourceTree = "<group>"; };
+		45A1B2511D86AA9E006774B9 /* KeepAdLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepAdLabel.h; sourceTree = "<group>"; };
+		45A1B2521D86AA9E006774B9 /* KeepAdLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepAdLabel.m; sourceTree = "<group>"; };
+		45A1B2531D86AA9E006774B9 /* KeepAdScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepAdScrollView.h; sourceTree = "<group>"; };
+		45A1B2541D86AA9E006774B9 /* KeepAdScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepAdScrollView.m; sourceTree = "<group>"; };
+		45A1B2551D86AA9E006774B9 /* KeepNewFeatrueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepNewFeatrueView.h; sourceTree = "<group>"; };
+		45A1B2561D86AA9E006774B9 /* KeepNewFeatrueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepNewFeatrueView.m; sourceTree = "<group>"; };
 		45BF0E801D868B53002CC8CE /* EaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseUI.h; sourceTree = "<group>"; };
 		45BF0E851D868B53002CC8CE /* EMCDDeviceManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerDelegate.h; sourceTree = "<group>"; };
 		45BF0E861D868B53002CC8CE /* EMCDDeviceManagerProximitySensorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerProximitySensorDelegate.h; sourceTree = "<group>"; };
@@ -733,6 +750,78 @@
 				4536EDAF1D8286100090CE23 /* UIImage+Extension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		45A1B2401D86A28C006774B9 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				45A1B2411D86A28C006774B9 /* Controller */,
+				45A1B2421D86A28C006774B9 /* Model */,
+				45A1B2431D86A28C006774B9 /* View */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		45A1B2411D86A28C006774B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45A1B2451D86A301006774B9 /* AINewFeatureViewController.h */,
+				45A1B2461D86A301006774B9 /* AINewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		45A1B2421D86A28C006774B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45A1B2431D86A28C006774B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45A1B2481D86A39D006774B9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				45A1B2491D86A39D006774B9 /* Controller */,
+				45A1B24A1D86A39D006774B9 /* Model */,
+				45A1B24B1D86A39D006774B9 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		45A1B2491D86A39D006774B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45A1B24C1D86A3A9006774B9 /* AILoginViewController.h */,
+				45A1B24D1D86A3A9006774B9 /* AILoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		45A1B24A1D86A39D006774B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45A1B24B1D86A39D006774B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45A1B2511D86AA9E006774B9 /* KeepAdLabel.h */,
+				45A1B2521D86AA9E006774B9 /* KeepAdLabel.m */,
+				45A1B2531D86AA9E006774B9 /* KeepAdScrollView.h */,
+				45A1B2541D86AA9E006774B9 /* KeepAdScrollView.m */,
+				45A1B2551D86AA9E006774B9 /* KeepNewFeatrueView.h */,
+				45A1B2561D86AA9E006774B9 /* KeepNewFeatrueView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		45BF0E7F1D868B53002CC8CE /* EaseUI */ = {
@@ -1348,6 +1437,7 @@
 		45C4CE331D8143CC00068820 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				45A1B24F1D86A8C7006774B9 /* BridgeLoop.mp4 */,
 				45C4CE3F1D8143CC00068820 /* Assets.xcassets */,
 				45C4CE411D8143CC00068820 /* LaunchScreen.storyboard */,
 				45C4CE441D8143CC00068820 /* Info.plist */,
@@ -1377,6 +1467,8 @@
 		45C4CE671D8145CC00068820 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				45A1B2481D86A39D006774B9 /* Login */,
+				45A1B2401D86A28C006774B9 /* NewFeature */,
 				4536ED7A1D8264CE0090CE23 /* Libs */,
 				4536ED751D8263D40090CE23 /* Left */,
 				4536ED601D8262A60090CE23 /* Chat */,
@@ -1541,6 +1633,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A1B2501D86A8C7006774B9 /* BridgeLoop.mp4 in Resources */,
 				45C4CE431D8143CC00068820 /* LaunchScreen.storyboard in Resources */,
 				45C4CE401D8143CC00068820 /* Assets.xcassets in Resources */,
 				45BF0FC01D868B54002CC8CE /* MJRefresh.bundle in Resources */,
@@ -1657,6 +1750,7 @@
 				45BF100D1D868B54002CC8CE /* EaseBubbleView+Video.m in Sources */,
 				4536EDB41D8286100090CE23 /* UIBarButtonItem+AIExtension.m in Sources */,
 				4536ED711D8263060090CE23 /* AIHomePageViewController.m in Sources */,
+				45A1B2581D86AA9E006774B9 /* KeepAdScrollView.m in Sources */,
 				45BF0FA81D868B54002CC8CE /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				45BF0FD21D868B54002CC8CE /* EMSDWebImageDownloaderOperation.m in Sources */,
 				45BF0FFF1D868B54002CC8CE /* EaseMessageViewController.m in Sources */,
@@ -1669,6 +1763,7 @@
 				45BF0FF71D868B54002CC8CE /* EaseMessageReadManager.m in Sources */,
 				45BF0FEE1D868B54002CC8CE /* EaseMessageModel.m in Sources */,
 				45BF0FB91D868B54002CC8CE /* MJRefreshAutoStateFooter.m in Sources */,
+				45A1B2471D86A301006774B9 /* AINewFeatureViewController.m in Sources */,
 				45BF0FA51D868B54002CC8CE /* EMAudioRecorderUtil.m in Sources */,
 				45BF0FD51D868B54002CC8CE /* MKAnnotationView+EMWebCache.m in Sources */,
 				45BF0FC51D868B54002CC8CE /* MWCaptionView.m in Sources */,
@@ -1677,6 +1772,7 @@
 				45BF0FE91D868B54002CC8CE /* PSTGridLayoutRow.m in Sources */,
 				45BF10111D868B54002CC8CE /* EaseChatToolbarItem.m in Sources */,
 				45BF0FA41D868B54002CC8CE /* EMAudioPlayerUtil.m in Sources */,
+				45A1B2591D86AA9E006774B9 /* KeepNewFeatrueView.m in Sources */,
 				45BF10101D868B54002CC8CE /* EaseChatToolbar.m in Sources */,
 				45BF100E1D868B54002CC8CE /* EaseBubbleView+Voice.m in Sources */,
 				45BF0FDD1D868B54002CC8CE /* UIView+EMWebCacheOperation.m in Sources */,
@@ -1685,6 +1781,7 @@
 				45BF0FB51D868B54002CC8CE /* MJRefreshFooter.m in Sources */,
 				45BF0FEF1D868B54002CC8CE /* EaseUserModel.m in Sources */,
 				45BF0FCD1D868B54002CC8CE /* DACircularProgressView.m in Sources */,
+				45A1B2571D86AA9E006774B9 /* KeepAdLabel.m in Sources */,
 				45BF0FAA1D868B54002CC8CE /* EMCDDeviceManagerBase.m in Sources */,
 				45BF10031D868B54002CC8CE /* EaseUserCell.m in Sources */,
 				45BF0FE51D868B54002CC8CE /* PSTCollectionViewLayout.m in Sources */,
@@ -1721,6 +1818,7 @@
 				45BF10061D868B54002CC8CE /* EaseMessageCell.m in Sources */,
 				45BF0FDC1D868B54002CC8CE /* UIImageView+EMWebCache.m in Sources */,
 				45BF0FDB1D868B54002CC8CE /* UIImageView+EMHighlightedWebCache.m in Sources */,
+				45A1B24E1D86A3A9006774B9 /* AILoginViewController.m in Sources */,
 				4536EDB11D8286100090CE23 /* NSDate+MJ.m in Sources */,
 				45BF10131D868B54002CC8CE /* EaseTextView.m in Sources */,
 				45BF0FFA1D868B54002CC8CE /* EaseEmotionEscape.m in Sources */,
