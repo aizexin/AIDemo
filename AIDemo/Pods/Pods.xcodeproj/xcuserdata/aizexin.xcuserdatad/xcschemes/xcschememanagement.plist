@@ -34,11 +34,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RJImageLoader.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -48,11 +43,6 @@
 			<true/>
 		</dict>
 		<key>37C76CD246D637B8E4C586284A0D96B2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3BC994F665813CC98E55AAC9F1560D55</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAF66A034A7AA2585B9B86229E67C240</key>
+		<key>CDA7336E3626081C599EFBD7D7AD16E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

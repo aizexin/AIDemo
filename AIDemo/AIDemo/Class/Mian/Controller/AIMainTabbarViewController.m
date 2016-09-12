@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUpTabBar];
+//    [self setUpTabBar];
     
     //主页
     AIHomePageViewController *homeVC = [[AIHomePageViewController alloc]init];

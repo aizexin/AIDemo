@@ -10,6 +10,8 @@
 #import "AIChooseRootVCTool.h"
 #import <MLTransition/MLTransition.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import "AppDelegate+EaseMob.h"
+#import <EMSDK.h>
 @interface AppDelegate ()
 
 @end
@@ -26,6 +28,17 @@
     [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];//or MLTransitionGestureRecognizerTypeScreenEdgePan
     //智能键盘
     [IQKeyboardManager sharedManager].enable = YES;
+    //环信
+    [self easemobApplication:application
+didFinishLaunchingWithOptions:launchOptions
+                      appkey:@"guozhongkeji#ckddemo"
+                apnsCertName:@"zhengshu"
+                 otherConfig:nil];
+    //  登录
+    EMError *error = [[EMClient sharedClient] loginWithUsername:@"text001" password:@"111"];
+    if (!error) {
+        NSLog(@"登录成功");
+    }
     return YES;
 }
 

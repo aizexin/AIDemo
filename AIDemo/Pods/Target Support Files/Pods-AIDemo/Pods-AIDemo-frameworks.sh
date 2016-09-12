@@ -89,7 +89,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MLTransition/MLTransition.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/RJImageLoader/RJImageLoader.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
@@ -97,5 +96,4 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MLTransition/MLTransition.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/RJImageLoader/RJImageLoader.framework"
 fi

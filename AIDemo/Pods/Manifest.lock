@@ -31,7 +31,6 @@ PODS:
   - HyphenateFullSDK (3.1.5)
   - IQKeyboardManager (4.0.5)
   - MLTransition (2.1.2)
-  - RJImageLoader (0.3.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -40,7 +39,6 @@ DEPENDENCIES:
   - HyphenateFullSDK (from `https://github.com/easemob/hyphenate-full-cocoapods.git`)
   - IQKeyboardManager
   - MLTransition (~> 2.1.2)
-  - RJImageLoader
 
 EXTERNAL SOURCES:
   HyphenateFullSDK:
@@ -58,8 +56,7 @@ SPEC CHECKSUMS:
   HyphenateFullSDK: 536f76eeb0914dba766b1d5d30dee083f0805da2
   IQKeyboardManager: 50b62c0603308968256f8208886e206c1dcce607
   MLTransition: 26751adac088c07e4df48c9f605cfdd767bb8afa
-  RJImageLoader: f0d9edebeb7837feb0ce51759826900645770db7
 
-PODFILE CHECKSUM: 80233353fce5caa6faeb66e82c460e186acfa689
+PODFILE CHECKSUM: 1668e52b625eaa2e3df1d9ebd75b6e205c2db0c1
 
 COCOAPODS: 1.0.1
