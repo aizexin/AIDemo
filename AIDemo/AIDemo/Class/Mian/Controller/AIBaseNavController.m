@@ -31,7 +31,7 @@
     
     //设置标题主题
    UINavigationBar *navBar =  [UINavigationBar appearance];
-
+   [navBar setBarTintColor:[UIColor colorWithRed:1.0 green:0.5 blue:0.0 alpha:1.0]];
     NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
     dictM[NSFontAttributeName] = AINavigationTitleFont;
     navBar.titleTextAttributes = dictM;

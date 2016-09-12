@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AMScrollingNavbar/AMScrollingNavbar.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/BLKFlexibleHeightBar/BLKFlexibleHeightBar.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MLTransition/MLTransition.framework"
@@ -94,6 +95,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AMScrollingNavbar/AMScrollingNavbar.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/BLKFlexibleHeightBar/BLKFlexibleHeightBar.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MLTransition/MLTransition.framework"

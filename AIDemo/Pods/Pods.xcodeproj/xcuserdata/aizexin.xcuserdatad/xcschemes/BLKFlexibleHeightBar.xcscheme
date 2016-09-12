@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8648B4B81C1F0EB634574B534A2F0EFC'
-               BlueprintName = 'RJImageLoader'
+               BlueprintIdentifier = '7AAA83A0B19E9AB585A6FFE3AAF1D304'
+               BlueprintName = 'BLKFlexibleHeightBar'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RJImageLoader.framework'>
+               BuildableName = 'BLKFlexibleHeightBar.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

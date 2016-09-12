@@ -14,7 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - AMScrollingNavbar (2.1.2)
+  - AMScrollingNavbar (1.5.1)
+  - BLKFlexibleHeightBar (1.0.2)
   - DKNightVersion (2.4.0):
     - DKNightVersion/Core (= 2.4.0)
     - DKNightVersion/CoreAnimation (= 2.4.0)
@@ -34,7 +35,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - AMScrollingNavbar
+  - AMScrollingNavbar (~> 1.5.1)
+  - BLKFlexibleHeightBar
   - DKNightVersion
   - IQKeyboardManager
   - MLTransition (~> 2.1.2)
@@ -42,12 +44,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  AMScrollingNavbar: 403b8651052459b433941bd4bc4215a64b992e52
+  AMScrollingNavbar: 767ed2db60d927a809bddff5d01b739b7020b12b
+  BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
   DKNightVersion: a46e6623767216cbff843192f9eac1a5aa177a44
   IQKeyboardManager: 50b62c0603308968256f8208886e206c1dcce607
   MLTransition: 26751adac088c07e4df48c9f605cfdd767bb8afa
   RJImageLoader: f0d9edebeb7837feb0ce51759826900645770db7
 
-PODFILE CHECKSUM: 014fa2a87b8f647cbfb448fc99900bb3e351df96
+PODFILE CHECKSUM: 9dcc17e72733ced1747ccc945b8dc5b6833f211b
 
 COCOAPODS: 1.0.1

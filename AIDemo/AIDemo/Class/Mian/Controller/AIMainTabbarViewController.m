@@ -14,6 +14,7 @@
 #import "AIHomePageViewController.h"
 #import "AIMainTabbarViewController.h"
 #import "AIBaseNavController.h"
+
 @interface AIMainTabbarViewController ()
 
 @end
@@ -63,7 +64,7 @@
     chilidVC.tabBarItem.selectedImage = selImage;
     //添加导航控制器
     AIBaseNavController *navVC = [[AIBaseNavController alloc]initWithRootViewController:chilidVC];
-    
+  
     
     [self addChildViewController:navVC];
 }

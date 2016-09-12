@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BLKFlexibleHeightBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DKNightVersion.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,6 +47,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>17CEFD82ECE725E8ECA62B8798F4ACAD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
@@ -52,22 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3957678C45D56FEDB676126C31846FB9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>40EB9E30929DCA8A63DD2F524E661018</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>536B9F35AFF1A6725F02302B5F55F59B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>6EE2CEEE9E89D9C4A6D127F064E1F42E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7AAA83A0B19E9AB585A6FFE3AAF1D304</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80F1D020981C77B26ABBD598F8FCCA56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8648B4B81C1F0EB634574B534A2F0EFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
