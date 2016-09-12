@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>AMScrollingNavbar.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>BLKFlexibleHeightBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,17 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>17CEFD82ECE725E8ECA62B8798F4ACAD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>37C76CD246D637B8E4C586284A0D96B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BC994F665813CC98E55AAC9F1560D55</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80F1D020981C77B26ABBD598F8FCCA56</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8648B4B81C1F0EB634574B534A2F0EFC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A3C78063375CE56CB288AF0CDBBED560</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAF66A034A7AA2585B9B86229E67C240</key>
 		<dict>
 			<key>primary</key>
 			<true/>

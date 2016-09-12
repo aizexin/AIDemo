@@ -14,7 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - AMScrollingNavbar (1.5.1)
   - BLKFlexibleHeightBar (1.0.2)
   - DKNightVersion (2.4.0):
     - DKNightVersion/Core (= 2.4.0)
@@ -29,28 +28,38 @@ PODS:
     - DKNightVersion/Core
   - DKNightVersion/UIKit (2.4.0):
     - DKNightVersion/Core
+  - HyphenateFullSDK (3.1.5)
   - IQKeyboardManager (4.0.5)
   - MLTransition (2.1.2)
   - RJImageLoader (0.3.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - AMScrollingNavbar (~> 1.5.1)
   - BLKFlexibleHeightBar
   - DKNightVersion
+  - HyphenateFullSDK (from `https://github.com/easemob/hyphenate-full-cocoapods.git`)
   - IQKeyboardManager
   - MLTransition (~> 2.1.2)
   - RJImageLoader
 
+EXTERNAL SOURCES:
+  HyphenateFullSDK:
+    :git: https://github.com/easemob/hyphenate-full-cocoapods.git
+
+CHECKOUT OPTIONS:
+  HyphenateFullSDK:
+    :commit: dabc2296bf03377a211450b3f1a813feac27e57d
+    :git: https://github.com/easemob/hyphenate-full-cocoapods.git
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  AMScrollingNavbar: 767ed2db60d927a809bddff5d01b739b7020b12b
   BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
   DKNightVersion: a46e6623767216cbff843192f9eac1a5aa177a44
+  HyphenateFullSDK: 536f76eeb0914dba766b1d5d30dee083f0805da2
   IQKeyboardManager: 50b62c0603308968256f8208886e206c1dcce607
   MLTransition: 26751adac088c07e4df48c9f605cfdd767bb8afa
   RJImageLoader: f0d9edebeb7837feb0ce51759826900645770db7
 
-PODFILE CHECKSUM: 9dcc17e72733ced1747ccc945b8dc5b6833f211b
+PODFILE CHECKSUM: 80233353fce5caa6faeb66e82c460e186acfa689
 
 COCOAPODS: 1.0.1

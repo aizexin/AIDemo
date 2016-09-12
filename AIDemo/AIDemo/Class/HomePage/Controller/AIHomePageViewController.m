@@ -7,7 +7,6 @@
 //
 
 #import "AIHomePageViewController.h"
-#import "AMScrollingNavbar.h"
 #import <BLKFlexibleHeightBar/BLKFlexibleHeightBar.h>
 #import "BLKDelegateSplitter.h"
 #import "SquareCashStyleBehaviorDefiner.h"
