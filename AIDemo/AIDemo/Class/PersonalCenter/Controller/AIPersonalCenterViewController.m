@@ -25,18 +25,15 @@
 //    [self.view addSubview:webView];
 //    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
     self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
-//    self.view.backgroundColor = [UIColor clearColor];
+    UIButton *switchButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [switchButton addTarget:self action:@selector(switchColor) forControlEvents:UIControlEventTouchUpInside];
+    [switchButton setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height / 2.0)];
+    switchButton.center = CGPointMake(self.view.center.x, self.view.center.y * 0.5);
+    [switchButton setTitle:@"SwitchColor" forState:UIControlStateNormal];
+    [self.view addSubview:switchButton];
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [super touchesBegan:touches withEvent:event];
-    AILog(@"touch-----");
-//    DKNightVersionManager *nightManager = [DKNightVersionManager sharedManager];
-//    if ( nightManager.themeVersion == DKThemeVersionNight) {
-//        nightManager.themeVersion = DKThemeVersionNormal;
-//    } else {
-//        nightManager.themeVersion = DKThemeVersionNight;
-//    }
+- (void)switchColor {
     if ([self.dk_manager.themeVersion isEqualToString:DKThemeVersionNight]) {
         [self.dk_manager dawnComing];
     } else {

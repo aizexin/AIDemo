@@ -37,6 +37,7 @@
 		45A1B2571D86AA9E006774B9 /* KeepAdLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B2521D86AA9E006774B9 /* KeepAdLabel.m */; };
 		45A1B2581D86AA9E006774B9 /* KeepAdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B2541D86AA9E006774B9 /* KeepAdScrollView.m */; };
 		45A1B2591D86AA9E006774B9 /* KeepNewFeatrueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B2561D86AA9E006774B9 /* KeepNewFeatrueView.m */; };
+		45B8CE6C1D884F7B001A2FBC /* DKColorTable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 45B8CE6B1D884F7B001A2FBC /* DKColorTable.txt */; };
 		45BF0FA41D868B54002CC8CE /* EMAudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF0E8A1D868B53002CC8CE /* EMAudioPlayerUtil.m */; };
 		45BF0FA51D868B54002CC8CE /* EMAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF0E8C1D868B53002CC8CE /* EMAudioRecorderUtil.m */; };
 		45BF0FA61D868B54002CC8CE /* EMCDDeviceManager+Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF0E8E1D868B53002CC8CE /* EMCDDeviceManager+Media.m */; };
@@ -241,6 +242,7 @@
 		45A1B2541D86AA9E006774B9 /* KeepAdScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepAdScrollView.m; sourceTree = "<group>"; };
 		45A1B2551D86AA9E006774B9 /* KeepNewFeatrueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepNewFeatrueView.h; sourceTree = "<group>"; };
 		45A1B2561D86AA9E006774B9 /* KeepNewFeatrueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepNewFeatrueView.m; sourceTree = "<group>"; };
+		45B8CE6B1D884F7B001A2FBC /* DKColorTable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DKColorTable.txt; sourceTree = "<group>"; };
 		45BF0E801D868B53002CC8CE /* EaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseUI.h; sourceTree = "<group>"; };
 		45BF0E851D868B53002CC8CE /* EMCDDeviceManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerDelegate.h; sourceTree = "<group>"; };
 		45BF0E861D868B53002CC8CE /* EMCDDeviceManagerProximitySensorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerProximitySensorDelegate.h; sourceTree = "<group>"; };
@@ -1439,6 +1441,7 @@
 		45C4CE331D8143CC00068820 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				45B8CE6B1D884F7B001A2FBC /* DKColorTable.txt */,
 				4517C2C61D87EA68008E122E /* 001.pdf */,
 				45A1B24F1D86A8C7006774B9 /* BridgeLoop.mp4 */,
 				45C4CE3F1D8143CC00068820 /* Assets.xcassets */,
@@ -1640,6 +1643,7 @@
 				45C4CE431D8143CC00068820 /* LaunchScreen.storyboard in Resources */,
 				45C4CE401D8143CC00068820 /* Assets.xcassets in Resources */,
 				45BF0FC01D868B54002CC8CE /* MJRefresh.bundle in Resources */,
+				45B8CE6C1D884F7B001A2FBC /* DKColorTable.txt in Resources */,
 				4517C2C71D87EA68008E122E /* 001.pdf in Resources */,
 				45BF0FEB1D868B54002CC8CE /* MWPhotoBrowser.bundle in Resources */,
 				45BF10191D868B54002CC8CE /* EaseUIResource.bundle in Resources */,

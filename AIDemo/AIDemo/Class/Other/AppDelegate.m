@@ -40,7 +40,6 @@ didFinishLaunchingWithOptions:launchOptions
         NSLog(@"登录成功");
     }
     [self setup3DTouch];
-    AILog(@"launchOptions-------%@",launchOptions);
     if (launchOptions[UIApplicationLaunchOptionsShortcutItemKey]) {
         AILog(@"launch优质");
     UIWindow *lastWindow                            = [[UIApplication sharedApplication].windows lastObject];
