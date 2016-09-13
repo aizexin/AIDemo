@@ -40,11 +40,9 @@ didFinishLaunchingWithOptions:launchOptions
         NSLog(@"登录成功");
     }
     [self setup3DTouch];
+    //通过3Dtouch的小图标进来（程序是死的）
     if (launchOptions[UIApplicationLaunchOptionsShortcutItemKey]) {
-        AILog(@"launch优质");
-    UIWindow *lastWindow                            = [[UIApplication sharedApplication].windows lastObject];
-    UIButton *btn                                   = [UIButton buttonWithType:(UIButtonTypeContactAdd)];
-        [lastWindow addSubview:btn];
+        [AIChooseRootVCTool chooseVCWithShortcutItem:launchOptions[UIApplicationLaunchOptionsShortcutItemKey]];
         return NO;
     }
     return YES;
