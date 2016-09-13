@@ -14,9 +14,9 @@
  */
 #ifdef __OBJC__
 #ifdef DEBUG//调试阶段的log
-#define RJLog(...) NSLog(__VA_ARGS__)
+#define AILog(...) NSLog(__VA_ARGS__)
 #else
-#define RJLog(...)
+#define AILog(...)
 #endif
 #import <UIKit/UIKit.h>
 

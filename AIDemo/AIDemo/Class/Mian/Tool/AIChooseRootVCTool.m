@@ -34,4 +34,27 @@
     [UIApplication sharedApplication].keyWindow.rootViewController = rootVC;
 }
 
++(void)chooseVCWithShortcutItem:(UIApplicationShortcutItem *)shortcutItem{
+    //左边控制器
+    AILeftViewController *leftVC = [[AILeftViewController alloc]init];
+    //tabbar
+    AIMainTabbarViewController *tabVC = [[AIMainTabbarViewController alloc]init];
+    
+    MCLeftSlideViewController *rootVC = [[MCLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabVC];
+    // 设置跟控制器
+    [UIApplication sharedApplication].keyWindow.rootViewController = rootVC;
+    
+    // 判断先前我们设置的唯一标识
+    //TODO: 这里通过唯一判断唯一标示进来跳转到不同页面
+    if([shortcutItem.type isEqualToString:@"com.51fanxing.adorableStar"]){
+        tabVC.selectedIndex = 2;
+        AILog(@"星-----");
+    }else if ([shortcutItem.type isEqualToString:@"com.51fanxing.searchBrand"]){
+    }else if ([shortcutItem.type isEqualToString:@"com.51fanxing.receiptOfGoods"]){
+        
+    }else if ([shortcutItem.type isEqualToString:@"com.51fanxing.starTicket"]){
+        
+    }
+}
+
 @end

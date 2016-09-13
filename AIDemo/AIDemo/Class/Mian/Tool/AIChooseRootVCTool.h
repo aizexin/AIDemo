@@ -19,4 +19,11 @@
  *  进入主页
  */
 +(void) choose2Main;
+
+/**
+ *  通过3dtouch点进来的图标选择控制器
+ *
+ *  @param shortcutItem <#shortcutItem description#>
+ */
++(void)chooseVCWithShortcutItem:(UIApplicationShortcutItem *)shortcutItem;
 @end

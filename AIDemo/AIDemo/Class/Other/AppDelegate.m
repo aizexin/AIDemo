@@ -39,7 +39,45 @@ didFinishLaunchingWithOptions:launchOptions
     if (!error) {
         NSLog(@"登录成功");
     }
+    [self setup3DTouch];
+    AILog(@"launchOptions-------%@",launchOptions);
+    if (launchOptions[UIApplicationLaunchOptionsShortcutItemKey]) {
+        AILog(@"launch优质");
+        UIWindow *lastWindow = [[UIApplication sharedApplication].windows lastObject];
+        UIButton *btn = [UIButton buttonWithType:(UIButtonTypeContactAdd)];
+        [lastWindow addSubview:btn];
+        return NO;
+    }
     return YES;
 }
 
+- (void)setup3DTouch
+{
+    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_AdorableStar"];
+    UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Search_brand"];
+    UIApplicationShortcutIcon *icon3 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Receipt_of_goods"];
+    UIApplicationShortcutIcon *icon4 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Star_Ticket"];
+    
+    UIMutableApplicationShortcutItem *item1 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.adorableStar" localizedTitle:@"萌星说" localizedSubtitle:nil icon:icon1 userInfo:nil];
+    UIMutableApplicationShortcutItem *item2 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.searchBrand" localizedTitle:@"搜品牌" localizedSubtitle:nil icon:icon2 userInfo:nil];
+    UIMutableApplicationShortcutItem *item3 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.receiptOfGoods" localizedTitle:@"查物流" localizedSubtitle:nil icon:icon3 userInfo:nil];
+    UIMutableApplicationShortcutItem *item4 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.starTicket" localizedTitle:@"摇星券" localizedSubtitle:nil icon:icon4 userInfo:nil];
+    
+    NSArray *items = @[item1, item2, item3,item4];
+    NSArray *existingItems = [UIApplication sharedApplication].shortcutItems;
+    NSArray *updatedItems = [existingItems arrayByAddingObjectsFromArray:items];
+    [UIApplication sharedApplication].shortcutItems = updatedItems;
+}
+
+/**
+ *  通过3dtouch图标点进来的时候
+ *
+ *  @param application       <#application description#>
+ *  @param shortcutItem      <#shortcutItem description#>
+ *  @param completionHandler <#completionHandler description#>
+ */
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler
+{
+    [AIChooseRootVCTool chooseVCWithShortcutItem:shortcutItem];
+}
 @end
