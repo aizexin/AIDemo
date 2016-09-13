@@ -10,6 +10,7 @@
 #import <BLKFlexibleHeightBar/BLKFlexibleHeightBar.h>
 #import "BLKDelegateSplitter.h"
 #import "SquareCashStyleBehaviorDefiner.h"
+#import <DKNightVersion/DKNightVersion.h>
 @interface AIHomePageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 /** tabbeleview测试*/
@@ -26,8 +27,33 @@
 //    [self.navigationController setAutomaticallyAdjustsScrollViewInsets:NO];
     self.navigationController.navigationBarHidden = YES;
     [self buildUI];
-    
-    
+
+}
+
+#pragma mark --------UI
+/**
+ *  创建UI
+ */
+- (void)buildUI{
+    //tableview
+    self.tabeleView = [[UITableView alloc]initWithFrame:self.view.frame style:(UITableViewStylePlain)];
+    self.tabeleView.delegate = self;
+    self.tabeleView.dataSource = self;
+    self.tabeleView.rowHeight = 60.f;
+    [self.view addSubview:self.tabeleView];
+    //添加拉伸的bar
+    [self setBLKbar];
+    //设置夜间模式
+}
+//TODO: 还没有调用
+- (void)setNight{
+    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
+    DKNightVersionManager *manager = [DKNightVersionManager sharedManager];
+     manager.themeVersion = DKThemeVersionNormal;
+}
+
+-(void)setBLKbar{
+    //添加拉伸的bar
     BLKFlexibleHeightBar *myBar = [[BLKFlexibleHeightBar alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, 100.0)];
     myBar.minimumBarHeight = 50.0;
     myBar.backgroundColor = [UIColor colorWithRed:0.86 green:0.25 blue:0.23 alpha:1];
@@ -66,20 +92,6 @@
     self.delegateSplitter = [[BLKDelegateSplitter alloc] initWithFirstDelegate:myBar.behaviorDefiner secondDelegate:self];
     self.tabeleView.delegate = (id<UITableViewDelegate>)self.delegateSplitter;
     [myBar addSubview:label];
-
-}
-
-
-/**
- *  创建UI
- */
-- (void)buildUI{
-    //tableview
-    self.tabeleView = [[UITableView alloc]initWithFrame:self.view.frame style:(UITableViewStylePlain)];
-    self.tabeleView.delegate = self;
-    self.tabeleView.dataSource = self;
-    self.tabeleView.rowHeight = 60.f;
-    [self.view addSubview:self.tabeleView];
 }
 
 #pragma mark -----tabeleViewDataSource

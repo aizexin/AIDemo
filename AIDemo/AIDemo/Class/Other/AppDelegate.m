@@ -19,15 +19,15 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];   //设置通用背景颜色
+    self.window                                     = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor                     = [UIColor whiteColor];//设置通用背景颜色
     [self.window makeKeyAndVisible];
     //选择根控制器
     [AIChooseRootVCTool chooseLoginVC];
     //添加侧滑返回
     [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];//or MLTransitionGestureRecognizerTypeScreenEdgePan
     //智能键盘
-    [IQKeyboardManager sharedManager].enable = YES;
+    [IQKeyboardManager sharedManager].enable        = YES;
     //环信
     [self easemobApplication:application
 didFinishLaunchingWithOptions:launchOptions
@@ -35,7 +35,7 @@ didFinishLaunchingWithOptions:launchOptions
                 apnsCertName:@"zhengshu"
                  otherConfig:nil];
     //  登录
-    EMError *error = [[EMClient sharedClient] loginWithUsername:@"text001" password:@"111"];
+    EMError *error                                  = [[EMClient sharedClient] loginWithUsername:@"text001" password:@"111"];
     if (!error) {
         NSLog(@"登录成功");
     }
@@ -43,8 +43,8 @@ didFinishLaunchingWithOptions:launchOptions
     AILog(@"launchOptions-------%@",launchOptions);
     if (launchOptions[UIApplicationLaunchOptionsShortcutItemKey]) {
         AILog(@"launch优质");
-        UIWindow *lastWindow = [[UIApplication sharedApplication].windows lastObject];
-        UIButton *btn = [UIButton buttonWithType:(UIButtonTypeContactAdd)];
+    UIWindow *lastWindow                            = [[UIApplication sharedApplication].windows lastObject];
+    UIButton *btn                                   = [UIButton buttonWithType:(UIButtonTypeContactAdd)];
         [lastWindow addSubview:btn];
         return NO;
     }
@@ -53,19 +53,19 @@ didFinishLaunchingWithOptions:launchOptions
 
 - (void)setup3DTouch
 {
-    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_AdorableStar"];
-    UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Search_brand"];
-    UIApplicationShortcutIcon *icon3 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Receipt_of_goods"];
-    UIApplicationShortcutIcon *icon4 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Star_Ticket"];
-    
-    UIMutableApplicationShortcutItem *item1 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.adorableStar" localizedTitle:@"萌星说" localizedSubtitle:nil icon:icon1 userInfo:nil];
-    UIMutableApplicationShortcutItem *item2 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.searchBrand" localizedTitle:@"搜品牌" localizedSubtitle:nil icon:icon2 userInfo:nil];
-    UIMutableApplicationShortcutItem *item3 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.receiptOfGoods" localizedTitle:@"查物流" localizedSubtitle:nil icon:icon3 userInfo:nil];
-    UIMutableApplicationShortcutItem *item4 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.starTicket" localizedTitle:@"摇星券" localizedSubtitle:nil icon:icon4 userInfo:nil];
-    
-    NSArray *items = @[item1, item2, item3,item4];
-    NSArray *existingItems = [UIApplication sharedApplication].shortcutItems;
-    NSArray *updatedItems = [existingItems arrayByAddingObjectsFromArray:items];
+    UIApplicationShortcutIcon *icon1                = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_AdorableStar"];
+    UIApplicationShortcutIcon *icon2                = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Search_brand"];
+    UIApplicationShortcutIcon *icon3                = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Receipt_of_goods"];
+    UIApplicationShortcutIcon *icon4                = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Star_Ticket"];
+
+    UIMutableApplicationShortcutItem *item1         = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.adorableStar" localizedTitle:@"萌星说" localizedSubtitle:nil icon:icon1 userInfo:nil];
+    UIMutableApplicationShortcutItem *item2         = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.searchBrand" localizedTitle:@"搜品牌" localizedSubtitle:nil icon:icon2 userInfo:nil];
+    UIMutableApplicationShortcutItem *item3         = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.receiptOfGoods" localizedTitle:@"查物流" localizedSubtitle:nil icon:icon3 userInfo:nil];
+    UIMutableApplicationShortcutItem *item4         = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.51fanxing.starTicket" localizedTitle:@"摇星券" localizedSubtitle:nil icon:icon4 userInfo:nil];
+
+    NSArray *items                                  = @[item1, item2, item3,item4];
+    NSArray *existingItems                          = [UIApplication sharedApplication].shortcutItems;
+    NSArray *updatedItems                           = [existingItems arrayByAddingObjectsFromArray:items];
     [UIApplication sharedApplication].shortcutItems = updatedItems;
 }
 

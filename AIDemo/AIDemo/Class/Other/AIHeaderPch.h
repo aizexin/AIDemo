@@ -19,6 +19,7 @@
 #define AILog(...)
 #endif
 #import <UIKit/UIKit.h>
+#import <DKNightVersion/DKNightVersion.h>
 
 #endif /* PrefixHeader_pch */
 #endif
@@ -26,3 +27,5 @@
 #define AITabBarItemFont [UIFont systemFontOfSize:13]
 // 导航栏标题的字体
 #define AINavigationTitleFont [UIFont boldSystemFontOfSize:20]
+// 随机色
+#define AIRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]

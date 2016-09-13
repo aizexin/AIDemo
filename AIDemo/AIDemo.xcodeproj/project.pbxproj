@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		451524AB1D86741600ED00A9 /* AppDelegate+EaseMob.m in Sources */ = {isa = PBXBuildFile; fileRef = 451524AA1D86741600ED00A9 /* AppDelegate+EaseMob.m */; };
 		451524AE1D86756F00ED00A9 /* AIChatSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 451524AD1D86756F00ED00A9 /* AIChatSingleViewController.m */; };
+		4517C2C71D87EA68008E122E /* 001.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4517C2C61D87EA68008E122E /* 001.pdf */; };
 		4536ED6E1D8262DC0090CE23 /* AIChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536ED6D1D8262DC0090CE23 /* AIChatViewController.m */; };
 		4536ED711D8263060090CE23 /* AIHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536ED701D8263060090CE23 /* AIHomePageViewController.m */; };
 		4536ED741D8263180090CE23 /* AIPersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536ED731D8263180090CE23 /* AIPersonalCenterViewController.m */; };
@@ -186,6 +187,7 @@
 		451524AA1D86741600ED00A9 /* AppDelegate+EaseMob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+EaseMob.m"; sourceTree = "<group>"; };
 		451524AC1D86756F00ED00A9 /* AIChatSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIChatSingleViewController.h; sourceTree = "<group>"; };
 		451524AD1D86756F00ED00A9 /* AIChatSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIChatSingleViewController.m; sourceTree = "<group>"; };
+		4517C2C61D87EA68008E122E /* 001.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 001.pdf; sourceTree = "<group>"; };
 		4536ED6C1D8262DC0090CE23 /* AIChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIChatViewController.h; sourceTree = "<group>"; };
 		4536ED6D1D8262DC0090CE23 /* AIChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIChatViewController.m; sourceTree = "<group>"; };
 		4536ED6F1D8263060090CE23 /* AIHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHomePageViewController.h; sourceTree = "<group>"; };
@@ -1437,6 +1439,7 @@
 		45C4CE331D8143CC00068820 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4517C2C61D87EA68008E122E /* 001.pdf */,
 				45A1B24F1D86A8C7006774B9 /* BridgeLoop.mp4 */,
 				45C4CE3F1D8143CC00068820 /* Assets.xcassets */,
 				45C4CE411D8143CC00068820 /* LaunchScreen.storyboard */,
@@ -1637,6 +1640,7 @@
 				45C4CE431D8143CC00068820 /* LaunchScreen.storyboard in Resources */,
 				45C4CE401D8143CC00068820 /* Assets.xcassets in Resources */,
 				45BF0FC01D868B54002CC8CE /* MJRefresh.bundle in Resources */,
+				4517C2C71D87EA68008E122E /* 001.pdf in Resources */,
 				45BF0FEB1D868B54002CC8CE /* MWPhotoBrowser.bundle in Resources */,
 				45BF10191D868B54002CC8CE /* EaseUIResource.bundle in Resources */,
 			);
@@ -1993,6 +1997,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIDemo/Class/Other/AIHeaderPch.h";
 				INFOPLIST_FILE = AIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2015,6 +2020,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIDemo/Class/Other/AIHeaderPch.h";
 				INFOPLIST_FILE = AIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
