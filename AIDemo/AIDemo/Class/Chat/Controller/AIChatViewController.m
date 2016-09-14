@@ -21,7 +21,7 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    AIChatSingleViewController *vc = [[AIChatSingleViewController alloc] initWithConversationChatter:@"text002" conversationType:EMConversationTypeChat];
+    AIChatSingleViewController *vc = [[AIChatSingleViewController alloc] initWithConversationChatter:AIEM2Count conversationType:EMConversationTypeChat];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
