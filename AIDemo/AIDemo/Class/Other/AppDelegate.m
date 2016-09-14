@@ -35,23 +35,11 @@ didFinishLaunchingWithOptions:launchOptions
                 apnsCertName:@"zhengshu"
                  otherConfig:nil];
     //  登录
-    EMError *error                                  = [[EMClient sharedClient] loginWithUsername:AILoginEMCount password:AILoginEMPassWord];
+    EMError *error                                  = [[EMClient sharedClient] loginWithUsername:@"text001" password:@"111"];
     if (!error) {
         NSLog(@"登录成功");
     }
-    //3Dtouch
     [self setup3DTouch];
-    return [self return3DtouchWithOptions:launchOptions];
-}
-
-/**
- *  程序是否直接从3Dtouch进入
- *
- *  @param launchOptions <#launchOptions description#>
- *
- *  @return <#return value description#>
- */
--(BOOL)return3DtouchWithOptions:(NSDictionary *)launchOptions {
     //通过3Dtouch的小图标进来（程序是死的）
     if (launchOptions[UIApplicationLaunchOptionsShortcutItemKey]) {
         [AIChooseRootVCTool chooseVCWithShortcutItem:launchOptions[UIApplicationLaunchOptionsShortcutItemKey]];
@@ -59,12 +47,9 @@ didFinishLaunchingWithOptions:launchOptions
     }
     return YES;
 }
-/**
- *  设置3dtouch（图标）
- */
+
 - (void)setup3DTouch
 {
-    
     UIApplicationShortcutIcon *icon1                = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_AdorableStar"];
     UIApplicationShortcutIcon *icon2                = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Search_brand"];
     UIApplicationShortcutIcon *icon3                = [UIApplicationShortcutIcon iconWithTemplateImageName:@"fx_3DTouch_Receipt_of_goods"];

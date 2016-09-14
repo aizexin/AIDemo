@@ -31,8 +31,6 @@
     switchButton.center = CGPointMake(self.view.center.x, self.view.center.y * 0.5);
     [switchButton setTitle:@"SwitchColor" forState:UIControlStateNormal];
     [self.view addSubview:switchButton];
-    
-    [switchButton dk_setTitleColorPicker:DKColorPickerWithKey(TINT) forState:(UIControlStateNormal)];
 }
 
 - (void)switchColor {

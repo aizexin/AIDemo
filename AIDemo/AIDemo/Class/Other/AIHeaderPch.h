@@ -29,7 +29,3 @@
 #define AINavigationTitleFont [UIFont boldSystemFontOfSize:20]
 // 随机色
 #define AIRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
-//环信相关
-#define AILoginEMCount @"text001"
-#define AILoginEMPassWord @"111"
-#define AIEM2Count @"qq"
