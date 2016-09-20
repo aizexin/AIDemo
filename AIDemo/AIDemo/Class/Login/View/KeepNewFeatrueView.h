@@ -19,7 +19,8 @@
 @end
 
 @interface KeepNewFeatrueView : UIView
-
+@property (nonatomic, strong) UIButton *registerButton;
+@property (nonatomic, strong) UIButton *loginButton;
 @property (nonatomic, weak, nullable) id <KeepNewFeatrueViewDelegate> delegate;
 
 @end

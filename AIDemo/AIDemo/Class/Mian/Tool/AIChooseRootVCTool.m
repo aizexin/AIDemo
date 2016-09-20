@@ -11,15 +11,22 @@
 #import "AILeftViewController.h"
 #import "AIMainTabbarViewController.h"
 #import "AILoginViewController.h"
+
+#import "AINavgationDelegate.h"
 @implementation AIChooseRootVCTool
 
 
 +(void) chooseLoginVC{
     //登录页面
     AILoginViewController *loginVC = [[AILoginViewController alloc]init];
-    // 设置跟控制器
-       [UIApplication sharedApplication].keyWindow.rootViewController = loginVC;
+    //先添加一个导航栏
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginVC];
     
+    // 设置跟控制器
+    [UIApplication sharedApplication].keyWindow.rootViewController = nav;
+    
+    nav.delegate = [[AINavgationDelegate alloc]init];
+    nav.navigationBarHidden = YES;
 //    // 启动图片
 //    [[MCAdvertManager sharedInstance] setAdvertViewController];
 }

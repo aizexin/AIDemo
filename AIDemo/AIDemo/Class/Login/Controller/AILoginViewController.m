@@ -8,13 +8,15 @@
 
 #import "AILoginViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
-#import "KeepNewFeatrueView.h"
 #import "AIChooseRootVCTool.h"
+
+#import "MCLeftSlideViewController.h"
+#import "AILeftViewController.h"
+#import "AIMainTabbarViewController.h"
 @interface AILoginViewController ()<KeepNewFeatrueViewDelegate>
 /** 视频播放*/
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayerController;
-/**登录注册按钮以及滑动字体*/
-@property (nonatomic, strong) KeepNewFeatrueView *keepView;
+
 @end
 
 @implementation AILoginViewController
@@ -76,11 +78,15 @@
 // 登录
 - (void)keepNewFeatrueView:(nullable KeepNewFeatrueView *)keepNewFeatrueView didLogin:(nullable UIButton *)loginButton
 {
-    [AIChooseRootVCTool choose2Main];
+    //左边控制器
+    AILeftViewController *leftVC = [[AILeftViewController alloc]init];
+    //tabbar
+    AIMainTabbarViewController *tabVC = [[AIMainTabbarViewController alloc]init];
+    MCLeftSlideViewController *rootVC = [[MCLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabVC];
+    [self.navigationController pushViewController:rootVC animated:YES];
 }
 // 注册
-- (void)keepNewFeatrueView:(nullable KeepNewFeatrueView *)keepNewFeatrueView didRegister:(nullable UIButton *)registerButton
-{
+- (void)keepNewFeatrueView:(nullable KeepNewFeatrueView *)keepNewFeatrueView didRegister:(nullable UIButton *)registerButton{
    
 }
 

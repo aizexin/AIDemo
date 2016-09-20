@@ -24,13 +24,25 @@
 //    [webView loadRequest:request];
 //    [self.view addSubview:webView];
 //    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
-    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
+    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(SEP);
     UIButton *switchButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [switchButton addTarget:self action:@selector(switchColor) forControlEvents:UIControlEventTouchUpInside];
     [switchButton setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height / 2.0)];
     switchButton.center = CGPointMake(self.view.center.x, self.view.center.y * 0.5);
     [switchButton setTitle:@"SwitchColor" forState:UIControlStateNormal];
+    [switchButton dk_setTitleColorPicker:DKColorPickerWithKey(TINT) forState:UIControlStateNormal];
     [self.view addSubview:switchButton];
+    
+    [self buildUI];
+}
+
+#pragma mark ----UI
+-(void) buildUI{
+    
+    UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height / 2.0, 50, 50  )];
+//    imageV.image = [UIImage imageNamed:@"normal"];
+    imageV.dk_imagePicker = DKImagePickerWithNames(@"normal", @"night", @"normal1");
+    [self.view addSubview:imageV];
 }
 
 - (void)switchColor {

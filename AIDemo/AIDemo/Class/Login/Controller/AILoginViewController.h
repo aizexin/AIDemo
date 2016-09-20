@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "KeepNewFeatrueView.h"
 @interface AILoginViewController : UIViewController
-
+/**登录注册按钮以及滑动字体*/
+@property (nonatomic, strong) KeepNewFeatrueView *keepView;
 @end

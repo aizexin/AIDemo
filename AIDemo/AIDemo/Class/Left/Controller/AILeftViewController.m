@@ -112,20 +112,8 @@
  *  配置夜间模式
  */
 - (void)setNight{
-//    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
-//    // 设置夜间效果的颜色
-//
-//    [self addColorChangedBlock:^{
-//        @strongify(self);
-//        self.view.normalBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"leftbackiamge"]];
-//        self.view.nightBackgroundColor = UIColorFromRGB(0x343434);
-//        self.tableview.normalBackgroundColor = [UIColor clearColor];
-//        self.tableview.nightBackgroundColor = UIColorFromRGB(0x343434);
-//        self.tableview.nightSeparatorColor = UIColorFromRGB(0x313131);
-//        self.navigationController.navigationBar.nightBarTintColor = UIColorFromRGB(0x444444);
-//        self.navigationItem.leftBarButtonItem.nightTintColor = [UIColor whiteColor];
-//        self.navigationItem.rightBarButtonItem.nightTintColor = [UIColor whiteColor];
-//    }];
+    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
+
 }
 
 

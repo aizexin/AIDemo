@@ -8,12 +8,10 @@
 
 #import "KeepNewFeatrueView.h"
 #import "KeepAdScrollView.h"
-
 @interface KeepNewFeatrueView ()
 
 @property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) UIButton *registerButton;
-@property (nonatomic, strong) UIButton *loginButton;
+
 @property (nonatomic, strong) KeepAdScrollView *adScrollView;
 @property (nonatomic, strong) UIPageControl *pageControl;
 
