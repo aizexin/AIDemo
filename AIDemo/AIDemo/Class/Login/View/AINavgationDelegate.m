@@ -9,7 +9,7 @@
 #import "AINavgationDelegate.h"
 #import "AITransitionAnimator.h"
 
-@interface AINavgationDelegate ()<UINavigationControllerDelegate>
+@interface AINavgationDelegate ()
 
 @end
 @implementation AINavgationDelegate

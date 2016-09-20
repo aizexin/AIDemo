@@ -13,6 +13,7 @@
 #import "MCLeftSlideViewController.h"
 #import "AILeftViewController.h"
 #import "AIMainTabbarViewController.h"
+#import "AINavgationDelegate.h"
 @interface AILoginViewController ()<KeepNewFeatrueViewDelegate>
 /** 视频播放*/
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayerController;
@@ -83,6 +84,9 @@
     //tabbar
     AIMainTabbarViewController *tabVC = [[AIMainTabbarViewController alloc]init];
     MCLeftSlideViewController *rootVC = [[MCLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabVC];
+    AINavgationDelegate *navDelegate = [[AINavgationDelegate alloc]init];
+    
+    self.navigationController.delegate = navDelegate;
     [self.navigationController pushViewController:rootVC animated:YES];
 }
 // 注册

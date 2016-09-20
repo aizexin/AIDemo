@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AINavgationDelegate : NSObject
+@interface AINavgationDelegate : NSObject<UINavigationControllerDelegate>
 
 @end

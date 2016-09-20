@@ -36,7 +36,7 @@
     [containerView addSubview:toVC.view];
     
     UIBezierPath *originPath = [UIBezierPath bezierPathWithOvalInRect:btn.frame];
-    CGPoint extremePoint = CGPointMake(btn.center.x - 0, btn.center.y - CGRectGetHeight(toVC.view.bounds));
+    CGPoint extremePoint = CGPointMake(btn.center.x - 0, btn.center.y );//- CGRectGetHeight(toVC.view.bounds));
     
     float radius = sqrtf(extremePoint.x * extremePoint.x + extremePoint.y * extremePoint.y);
     UIBezierPath *finalPath = [UIBezierPath bezierPathWithOvalInRect:CGRectInset(btn.frame, -radius, -radius)];
