@@ -29,7 +29,7 @@ PODS:
   - DKNightVersion/UIKit (2.4.0):
     - DKNightVersion/Core
   - HyphenateFullSDK (3.1.5)
-  - IQKeyboardManager (4.0.5)
+  - IQKeyboardManager (4.0.6)
   - MLTransition (2.1.2)
 
 DEPENDENCIES:
@@ -54,9 +54,9 @@ SPEC CHECKSUMS:
   BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
   DKNightVersion: a46e6623767216cbff843192f9eac1a5aa177a44
   HyphenateFullSDK: 536f76eeb0914dba766b1d5d30dee083f0805da2
-  IQKeyboardManager: 50b62c0603308968256f8208886e206c1dcce607
+  IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
   MLTransition: 26751adac088c07e4df48c9f605cfdd767bb8afa
 
-PODFILE CHECKSUM: 1668e52b625eaa2e3df1d9ebd75b6e205c2db0c1
+PODFILE CHECKSUM: 02990baba7140fbd371b0023cef523bc5b115a97
 
 COCOAPODS: 1.0.1

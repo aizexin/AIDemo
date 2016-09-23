@@ -24,10 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.5467 green:1.0 blue:0.8338 alpha:1.0];
-//    [self.navigationController setAutomaticallyAdjustsScrollViewInsets:NO];
     self.navigationController.navigationBarHidden = YES;
     [self buildUI];
-
 }
 
 #pragma mark --------UI
@@ -44,12 +42,6 @@
     //添加拉伸的bar
     [self setBLKbar];
     //设置夜间模式
-}
-//TODO: 还没有调用
-- (void)setNight{
-    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
-    DKNightVersionManager *manager = [DKNightVersionManager sharedManager];
-     manager.themeVersion = DKThemeVersionNormal;
 }
 
 -(void)setBLKbar{

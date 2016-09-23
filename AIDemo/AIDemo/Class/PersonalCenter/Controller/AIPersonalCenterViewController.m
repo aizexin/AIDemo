@@ -17,13 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSString *path = [[NSBundle mainBundle]pathForResource:@"001.pdf" ofType:nil];
-//    WKWebView *webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
-//    NSURL *url = [NSURL fileURLWithPath:path];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//    [webView loadRequest:request];
-//    [self.view addSubview:webView];
-//    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
     self.view.dk_backgroundColorPicker = DKColorPickerWithKey(SEP);
     UIButton *switchButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [switchButton addTarget:self action:@selector(switchColor) forControlEvents:UIControlEventTouchUpInside];
@@ -40,7 +33,6 @@
 -(void) buildUI{
     
     UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height / 2.0, 50, 50  )];
-//    imageV.image = [UIImage imageNamed:@"normal"];
     imageV.dk_imagePicker = DKImagePickerWithNames(@"normal", @"night", @"normal1");
     [self.view addSubview:imageV];
 }
