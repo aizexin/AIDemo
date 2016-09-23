@@ -1,6 +1,6 @@
 #AIDemo
 <h3>这是一个使用三方库的demo，其中有夜间模式，放大圆圈转场，接入环信3.15实现单聊，自动隐藏navgationbar（可实现支付宝首页效果）
-[github](https://github.com/aizexin/AIDemo)
+[github](https://github.com/aizexin/AIDemo)[简书](http://www.jianshu.com/p/349a257eaba9)
 
 ----
 
