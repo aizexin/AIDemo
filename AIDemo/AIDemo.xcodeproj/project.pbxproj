@@ -512,9 +512,9 @@
 		45C4CE541D8143CC00068820 /* AIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C4CE581D8143CC00068820 /* AIDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIDemoUITests.m; sourceTree = "<group>"; };
 		45C4CE5A1D8143CC00068820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45C4CE691D8145CC00068820 /* AIHeaderPch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHeaderPch.h; sourceTree = "<group>"; };
-		45C4CE6A1D8145CC00068820 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		45C4CE6B1D8145CC00068820 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45C4CE691D8145CC00068820 /* AIHeaderPch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIHeaderPch.h; path = Class/Other/AIHeaderPch.h; sourceTree = "<group>"; };
+		45C4CE6A1D8145CC00068820 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Class/Other/AppDelegate.h; sourceTree = "<group>"; };
+		45C4CE6B1D8145CC00068820 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Class/Other/AppDelegate.m; sourceTree = "<group>"; };
 		9079FA64BE2469BC06BCF6C2 /* Pods_AIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64672316F5DA92244C6F7FE /* Pods-AIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIDemo/Pods-AIDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1443,6 +1443,9 @@
 			isa = PBXGroup;
 			children = (
 				45C4CE671D8145CC00068820 /* Class */,
+				45C4CE691D8145CC00068820 /* AIHeaderPch.h */,
+				45C4CE6A1D8145CC00068820 /* AppDelegate.h */,
+				45C4CE6B1D8145CC00068820 /* AppDelegate.m */,
 				45C4CE331D8143CC00068820 /* Supporting Files */,
 			);
 			path = AIDemo;
@@ -1499,9 +1502,6 @@
 		45C4CE681D8145CC00068820 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				45C4CE691D8145CC00068820 /* AIHeaderPch.h */,
-				45C4CE6A1D8145CC00068820 /* AppDelegate.h */,
-				45C4CE6B1D8145CC00068820 /* AppDelegate.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";

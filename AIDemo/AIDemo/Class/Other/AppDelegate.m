@@ -19,6 +19,14 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    /***************************************************************/
+    /*          github:https://github.com/aizexin/AIDemo           */
+    /*          email :443792431@qq.com                            */
+    /*          简书   :http://www.jianshu.com/p/349a257eaba9       */
+    /*                                                             */
+    /***************************************************************/
+    
     self.window                                     = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor                     = [UIColor whiteColor];//设置通用背景颜色
     [self.window makeKeyAndVisible];
@@ -28,14 +36,14 @@
     [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];//or MLTransitionGestureRecognizerTypeScreenEdgePan
     //智能键盘
     [IQKeyboardManager sharedManager].enable        = YES;
-    //环信
+    //环信  appkey和证书换成自己的（目前我推送证书不能用） 测试账号 111密码000   、 222密码000
     [self easemobApplication:application
 didFinishLaunchingWithOptions:launchOptions
-                      appkey:@"guozhongkeji#ckddemo"
+                      appkey:@"aizexin#aihuanxin"
                 apnsCertName:@"zhengshu"
                  otherConfig:nil];
     //  登录
-    EMError *error                                  = [[EMClient sharedClient] loginWithUsername:@"text001" password:@"111"];
+    EMError *error                                  = [[EMClient sharedClient] loginWithUsername:AILoginAccount password:AILoginPassWord];
     if (!error) {
         NSLog(@"登录成功");
     }

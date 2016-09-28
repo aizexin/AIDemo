@@ -29,3 +29,10 @@
 #define AINavigationTitleFont [UIFont boldSystemFontOfSize:20]
 // 随机色
 #define AIRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+//登录用户名
+#define AILoginAccount @"111"
+//登录密码
+#define AILoginPassWord @"000"
+//对方用户名
+#define AI2Account @"222"
+
