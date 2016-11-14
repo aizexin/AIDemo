@@ -1,10 +1,12 @@
 target ‘AIDemo’ do
-pod 'AFNetworking', '~> 3.0'#//AFNetworking网络请求
-pod "DKNightVersion" #夜间模式
-pod 'MLTransition', '~> 2.1.2'#滑动返回
-pod 'IQKeyboardManager'#自动键盘
-#pod "RJImageLoader"#动画加载图片
-pod 'BLKFlexibleHeightBar'
-pod 'HyphenateFullSDK', :git => 'https://github.com/easemob/hyphenate-full-cocoapods.git'#环信
-use_frameworks!
+    inhibit_all_warnings!         #禁止所有警告
+    pod 'AFNetworking', '~> 3.0'#//AFNetworking网络请求
+    pod "DKNightVersion" #夜间模式
+    pod 'MLTransition', '~> 2.1.2'#滑动返回
+    pod 'IQKeyboardManager'#自动键盘
+    #pod "RJImageLoader"#动画加载图片
+    pod 'BLKFlexibleHeightBar'
+    pod 'HyphenateFullSDK'        #环信
+    pod 'pop'                     #pop动画
+    use_frameworks!
 end

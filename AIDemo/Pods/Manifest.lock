@@ -15,48 +15,42 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - BLKFlexibleHeightBar (1.0.2)
-  - DKNightVersion (2.4.0):
-    - DKNightVersion/Core (= 2.4.0)
-    - DKNightVersion/CoreAnimation (= 2.4.0)
-    - DKNightVersion/UIKit (= 2.4.0)
-  - DKNightVersion/Core (2.4.0):
-    - DKNightVersion/Core/DeallocBlockExecutor (= 2.4.0)
-    - DKNightVersion/Core/extobjc (= 2.4.0)
-  - DKNightVersion/Core/DeallocBlockExecutor (2.4.0)
-  - DKNightVersion/Core/extobjc (2.4.0)
-  - DKNightVersion/CoreAnimation (2.4.0):
+  - DKNightVersion (2.4.2):
+    - DKNightVersion/Core (= 2.4.2)
+    - DKNightVersion/CoreAnimation (= 2.4.2)
+    - DKNightVersion/UIKit (= 2.4.2)
+  - DKNightVersion/Core (2.4.2):
+    - DKNightVersion/Core/DeallocBlockExecutor (= 2.4.2)
+    - DKNightVersion/Core/extobjc (= 2.4.2)
+  - DKNightVersion/Core/DeallocBlockExecutor (2.4.2)
+  - DKNightVersion/Core/extobjc (2.4.2)
+  - DKNightVersion/CoreAnimation (2.4.2):
     - DKNightVersion/Core
-  - DKNightVersion/UIKit (2.4.0):
+  - DKNightVersion/UIKit (2.4.2):
     - DKNightVersion/Core
   - HyphenateFullSDK (3.1.5)
-  - IQKeyboardManager (4.0.6)
+  - IQKeyboardManager (4.0.7)
   - MLTransition (2.1.2)
+  - pop (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - BLKFlexibleHeightBar
   - DKNightVersion
-  - HyphenateFullSDK (from `https://github.com/easemob/hyphenate-full-cocoapods.git`)
+  - HyphenateFullSDK
   - IQKeyboardManager
   - MLTransition (~> 2.1.2)
-
-EXTERNAL SOURCES:
-  HyphenateFullSDK:
-    :git: https://github.com/easemob/hyphenate-full-cocoapods.git
-
-CHECKOUT OPTIONS:
-  HyphenateFullSDK:
-    :commit: dabc2296bf03377a211450b3f1a813feac27e57d
-    :git: https://github.com/easemob/hyphenate-full-cocoapods.git
+  - pop
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
-  DKNightVersion: a46e6623767216cbff843192f9eac1a5aa177a44
+  DKNightVersion: a211bacb8d6a9677722aaf93e292a4e5908490c1
   HyphenateFullSDK: 536f76eeb0914dba766b1d5d30dee083f0805da2
-  IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
   MLTransition: 26751adac088c07e4df48c9f605cfdd767bb8afa
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
-PODFILE CHECKSUM: 02990baba7140fbd371b0023cef523bc5b115a97
+PODFILE CHECKSUM: 8de0452ad151ad2399d343592aa688ee9cf7bbd9
 
 COCOAPODS: 1.0.1
