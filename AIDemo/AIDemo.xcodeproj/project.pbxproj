@@ -164,6 +164,7 @@
 		45C4CE4E1D8143CC00068820 /* AIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C4CE4D1D8143CC00068820 /* AIDemoTests.m */; };
 		45C4CE591D8143CC00068820 /* AIDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C4CE581D8143CC00068820 /* AIDemoUITests.m */; };
 		45C4CE6C1D8145CC00068820 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C4CE6B1D8145CC00068820 /* AppDelegate.m */; };
+		45C9EAD31DD97C93007B6418 /* AITabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C9EAD21DD97C93007B6418 /* AITabBar.m */; };
 		92BF9B0D61979D105A07DB3D /* Pods_AIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9079FA64BE2469BC06BCF6C2 /* Pods_AIDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -515,6 +516,8 @@
 		45C4CE691D8145CC00068820 /* AIHeaderPch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIHeaderPch.h; path = Class/Other/AIHeaderPch.h; sourceTree = "<group>"; };
 		45C4CE6A1D8145CC00068820 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Class/Other/AppDelegate.h; sourceTree = "<group>"; };
 		45C4CE6B1D8145CC00068820 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Class/Other/AppDelegate.m; sourceTree = "<group>"; };
+		45C9EAD11DD97C93007B6418 /* AITabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITabBar.h; sourceTree = "<group>"; };
+		45C9EAD21DD97C93007B6418 /* AITabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITabBar.m; sourceTree = "<group>"; };
 		9079FA64BE2469BC06BCF6C2 /* Pods_AIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64672316F5DA92244C6F7FE /* Pods-AIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIDemo/Pods-AIDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1528,6 +1531,8 @@
 		45C4CE701D814B3A00068820 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45C9EAD11DD97C93007B6418 /* AITabBar.h */,
+				45C9EAD21DD97C93007B6418 /* AITabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1760,6 +1765,7 @@
 				45BF0FD31D868B54002CC8CE /* EMSDWebImageManager.m in Sources */,
 				45BF0FED1D868B54002CC8CE /* EaseConversationModel.m in Sources */,
 				45BF10011D868B54002CC8CE /* EaseUsersListViewController.m in Sources */,
+				45C9EAD31DD97C93007B6418 /* AITabBar.m in Sources */,
 				45BF0FE81D868B54002CC8CE /* PSTGridLayoutItem.m in Sources */,
 				4536EDA31D8285B10090CE23 /* AIBaseNavController.m in Sources */,
 				45BF10161D868B54002CC8CE /* EaseChatBarMoreView.m in Sources */,

@@ -7,14 +7,13 @@
 // 自定义的tabbarController
 
 #import "AIMainTabbarViewController.h"
-#import "TColorfulTabBar.h"
 
 #import "AIChatViewController.h"
 #import "AIPersonalCenterViewController.h"
 #import "AIHomePageViewController.h"
 #import "AIMainTabbarViewController.h"
 #import "AIBaseNavController.h"
-
+#import "AITabBar.h"
 @interface AIMainTabbarViewController ()
 
 @end
@@ -23,17 +22,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self setUpTabBar];
+    [self setUpTabBar];
     
     //主页
     AIHomePageViewController *homeVC = [[AIHomePageViewController alloc]init];
-    [self addOneChildVC:homeVC title:@"home" imageName:@"" selImageName:@""];
+    [self addOneChildVC:homeVC title:@"home" imageName:@"home_night" selImageName:@"home_press"];
     //聊天页面
     AIChatViewController *chatVC = [[AIChatViewController alloc]init];
-    [self addOneChildVC:chatVC title:@"chat" imageName:@"" selImageName:@""];
+    [self addOneChildVC:chatVC title:@"chat" imageName:@"article_night" selImageName:@"article_press_night"];
     //个人中心
     AIPersonalCenterViewController *personalVC = [[AIPersonalCenterViewController alloc]init];
-    [self addOneChildVC:personalVC title:@"个人中心" imageName:@"" selImageName:@""];
+    [self addOneChildVC:personalVC title:@"个人中心" imageName:@"mine_night" selImageName:@"mine_press_night"];
 }
 
 /**
@@ -73,7 +72,7 @@
 - (void)setUpTabBar
 {
     // 1、创建自定义的CHTabBar;
-    TColorfulTabBar *tabBar = [[TColorfulTabBar alloc] initWithFrame:self.tabBar.frame];
+    AITabBar *tabBar = [[AITabBar alloc] initWithFrame:self.tabBar.frame];
     [self setValue:tabBar forKey:@"tabBar"];
 }
 @end
