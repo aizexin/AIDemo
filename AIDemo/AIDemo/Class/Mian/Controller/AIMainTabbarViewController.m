@@ -14,8 +14,8 @@
 #import "AIMainTabbarViewController.h"
 #import "AIBaseNavController.h"
 #import "AITabBar.h"
-@interface AIMainTabbarViewController ()
-
+@interface AIMainTabbarViewController ()<AITabBarDelegate>
+@property(strong,nonatomic)AITabBar *myTabBar;
 @end
 
 @implementation AIMainTabbarViewController
@@ -45,34 +45,42 @@
  */
 -(void)addOneChildVC:(UIViewController*)chilidVC title:(NSString*)title imageName:(NSString*)imageName selImageName:(NSString*)selImageName{
     //设置标题
-    chilidVC.title = title;
+//    chilidVC.title = title;
     //设置正常文字颜色
-    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
-    dictM[NSFontAttributeName] = AITabBarItemFont;
-    dictM[NSForegroundColorAttributeName] = [UIColor blackColor];
-    [chilidVC.tabBarItem setTitleTextAttributes:dictM forState:(UIControlStateNormal)];
-    //设置被选中文字颜色
-    NSMutableDictionary *seldictM = [NSMutableDictionary dictionary];
-    seldictM[NSFontAttributeName] = AITabBarItemFont;
-    seldictM[NSForegroundColorAttributeName] = [UIColor orangeColor];
-    [chilidVC.tabBarItem setTitleTextAttributes:seldictM forState:(UIControlStateSelected)];
-    //设置正常图片
-    chilidVC.tabBarItem.image = [[UIImage imageNamed:imageName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
-    //被选中的图片
-    UIImage *selImage = [[UIImage imageNamed:selImageName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
-    chilidVC.tabBarItem.selectedImage = selImage;
+//    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
+//    dictM[NSFontAttributeName] = AITabBarItemFont;
+//    dictM[NSForegroundColorAttributeName] = [UIColor blackColor];
+//    [chilidVC.tabBarItem setTitleTextAttributes:dictM forState:(UIControlStateNormal)];
+//    //设置被选中文字颜色
+//    NSMutableDictionary *seldictM = [NSMutableDictionary dictionary];
+//    seldictM[NSFontAttributeName] = AITabBarItemFont;
+//    seldictM[NSForegroundColorAttributeName] = [UIColor orangeColor];
+//    [chilidVC.tabBarItem setTitleTextAttributes:seldictM forState:(UIControlStateSelected)];
+//    //设置正常图片
+//    chilidVC.tabBarItem.image = [[UIImage imageNamed:imageName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+//    //被选中的图片
+//    UIImage *selImage = [[UIImage imageNamed:selImageName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+//    chilidVC.tabBarItem.selectedImage = selImage;
     //添加导航控制器
     AIBaseNavController *navVC = [[AIBaseNavController alloc]initWithRootViewController:chilidVC];
   
-    
+    [self.myTabBar addTabBarWithNormaName:imageName andImageDisEnableName:selImageName];
     [self addChildViewController:navVC];
+
 }
 
 #pragma mark - 3、添加自定义tabBar------
 - (void)setUpTabBar
 {
     // 1、创建自定义的CHTabBar;
-    AITabBar *tabBar = [[AITabBar alloc] initWithFrame:self.tabBar.frame];
-    [self setValue:tabBar forKey:@"tabBar"];
+    self.myTabBar = [[AITabBar alloc] initWithFrame:self.tabBar.bounds];
+    self.myTabBar.btnDelegate = self;
+    [self setValue:self.myTabBar forKey:@"tabBar"];
+}
+
+#pragma mark --AITabBarDelegate
+-(void)tabBarJumpFrom:(NSInteger)from to:(NSInteger)to{
+    //页面跳转
+    self.selectedIndex = to;
 }
 @end

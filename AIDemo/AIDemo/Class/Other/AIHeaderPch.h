@@ -20,7 +20,7 @@
 #endif
 #import <UIKit/UIKit.h>
 #import <DKNightVersion/DKNightVersion.h>
-
+#import <pop/pop.h>
 #endif /* PrefixHeader_pch */
 #endif
 //tabBarItem字体大小
