@@ -38,7 +38,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
-        
+        _titleFont           = [UIFont fontWithName:@"Avenir-Medium"size:12.];
+        _titleNorlmalColor   = [UIColor blackColor];
+        _titleSelectColor    = [UIColor orangeColor];
     }
     return self;
 }
@@ -81,7 +83,11 @@
     
     //设置title
     [btn setTitle:title forState:(UIControlStateSelected)];
-
+    //设置颜色
+    [btn setTitleColor:_titleNorlmalColor forState:(UIControlStateNormal)];
+    [btn setTitleColor:_titleSelectColor forState:(UIControlStateSelected)];
+    //设置字体
+    [btn.titleLabel setFont:_titleFont];
     [self addSubview:btn];
     //添加到自己记录的btnArray里面
     [self.itemArrayM addObject:btn];

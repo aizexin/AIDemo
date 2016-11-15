@@ -39,10 +39,9 @@
     if (self) {
         [self setUp];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        self.titleLabel.font          = [UIFont fontWithName:@"Avenir-Medium"size:12.];
+//        self.titleLabel.font          = [UIFont fontWithName:@"Avenir-Medium"size:12.];
         //设置默认title颜色为black
-        [self setTitleColor:[UIColor blackColor] forState:(UIControlStateSelected)];
-        [self setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+    
         self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
         self.contentVerticalAlignment   = UIControlContentVerticalAlignmentCenter;
     }

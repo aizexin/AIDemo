@@ -13,10 +13,26 @@
 -(void)tabBarJumpFrom:(NSInteger)from to:(NSInteger)to;
 
 @end
+
 @interface AITabBar : UITabBar
+
 @property(nonatomic,weak)id<AITabBarDelegate> btnDelegate;
 
 
+/**
+ 文字正常颜色
+ */
+@property(nonatomic,strong)UIColor* titleNorlmalColor;
+
+/**
+ 文字被选中颜色
+ */
+@property(nonatomic,strong)UIColor* titleSelectColor;
+
+/**
+ title字体
+ */
+@property(nonatomic,strong)UIFont* titleFont;
 /**
  添加一个item
 

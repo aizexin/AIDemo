@@ -58,11 +58,7 @@
 //    seldictM[NSFontAttributeName] = AITabBarItemFont;
 //    seldictM[NSForegroundColorAttributeName] = [UIColor orangeColor];
 //    [chilidVC.tabBarItem setTitleTextAttributes:seldictM forState:(UIControlStateSelected)];
-//    //设置正常图片
-//    chilidVC.tabBarItem.image = [[UIImage imageNamed:imageName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
-//    //被选中的图片
-//    UIImage *selImage = [[UIImage imageNamed:selImageName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
-//    chilidVC.tabBarItem.selectedImage = selImage;
+
     //添加导航控制器
     AIBaseNavController *navVC = [[AIBaseNavController alloc]initWithRootViewController:chilidVC];
   
