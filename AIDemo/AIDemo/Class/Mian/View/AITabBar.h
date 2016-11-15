@@ -15,5 +15,21 @@
 @end
 @interface AITabBar : UITabBar
 @property(nonatomic,weak)id<AITabBarDelegate> btnDelegate;
--(void)addTabBarWithNormaName:(NSString*)imageNormalName andImageDisEnableName:(NSString*)imageDisEnableName andTitle:(NSString*)title;
+
+
+/**
+ 添加一个item
+
+ @param imageNormalName    正常状态图标
+ @param imageSelectedName  被选中图标
+ @param title              title
+ */
+-(void)addTabBarWithNormaName:(NSString*)imageNormalName andImageSelectedName:(NSString*)imageSelectedName andTitle:(NSString*)title;
+
+/**
+ 选中第几个0开始
+
+ @param index 第几个
+ */
+- (void)selectIndex:(NSInteger)index;
 @end

@@ -42,26 +42,6 @@
     }
     return self;
 }
-
--(void)addTabBarWithNormaName:(NSString*)imageNormalName andImageDisEnableName:(NSString*)imageDisEnableName andTitle:(NSString*)title{
-    AITabBarButton *btn  = [[AITabBarButton alloc]init];
-    //设置正常图片
-    UIImage *normalImage = [[UIImage imageNamed:imageNormalName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
-    [btn setImage:normalImage forState:(UIControlStateNormal)];
-    //被选中的图片
-    UIImage *selImage    = [[UIImage imageNamed:imageDisEnableName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
-    [btn setImage:selImage forState:(UIControlStateSelected)];
-
-    [btn addTarget:self action:@selector(btnOnClick:) forControlEvents:(UIControlEventTouchDown)];
-    
-    //设置title
-    [btn setTitle:title forState:(UIControlStateSelected)];
-
-    [self addSubview:btn];
-    //添加到自己记录的btnArray里面
-    [self.itemArrayM addObject:btn];
-}
-
 /**
  *  子视图发生改变的时候调用
  */
@@ -82,8 +62,32 @@
             [item removeFromSuperview];
         }
     }
-
+    
 }
+
+#pragma mark --public
+
+
+-(void)addTabBarWithNormaName:(NSString*)imageNormalName andImageSelectedName:(NSString*)imageSelectedName andTitle:(NSString*)title{
+    AITabBarButton *btn  = [[AITabBarButton alloc]init];
+    //设置正常图片
+    UIImage *normalImage = [[UIImage imageNamed:imageNormalName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+    [btn setImage:normalImage forState:(UIControlStateNormal)];
+    //被选中的图片
+    UIImage *selImage    = [[UIImage imageNamed:imageSelectedName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+    [btn setImage:selImage forState:(UIControlStateSelected)];
+
+    [btn addTarget:self action:@selector(btnOnClick:) forControlEvents:(UIControlEventTouchDown)];
+    
+    //设置title
+    [btn setTitle:title forState:(UIControlStateSelected)];
+
+    [self addSubview:btn];
+    //添加到自己记录的btnArray里面
+    [self.itemArrayM addObject:btn];
+}
+
+#pragma mark --Action
 - (void)btnOnClick:(AITabBarButton*)btn{
     
     if (!btn.isSelected) {
@@ -94,6 +98,10 @@
             [_btnDelegate tabBarJumpFrom:_lastBtn.tag to:btn.tag];
         }
     }
+}
+- (void)selectIndex:(NSInteger)index{
+    AITabBarButton *btn  = self.itemArrayM[index];
+    [self btnOnClick:btn];
 }
 
 

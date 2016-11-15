@@ -33,6 +33,8 @@
     //个人中心
     AIPersonalCenterViewController *personalVC = [[AIPersonalCenterViewController alloc]init];
     [self addOneChildVC:personalVC title:@"个人中心" imageName:@"mine_night" selImageName:@"mine_press_night"];
+    //设置默认选择第一个
+    [self.myTabBar selectIndex:0];
 }
 
 /**
@@ -64,7 +66,7 @@
     //添加导航控制器
     AIBaseNavController *navVC = [[AIBaseNavController alloc]initWithRootViewController:chilidVC];
   
-    [self.myTabBar addTabBarWithNormaName:imageName andImageDisEnableName:selImageName andTitle:title];
+    [self.myTabBar addTabBarWithNormaName:imageName andImageSelectedName:selImageName andTitle:title];
     [self addChildViewController:navVC];
 
 }
