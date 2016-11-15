@@ -45,7 +45,7 @@
  */
 -(void)addOneChildVC:(UIViewController*)chilidVC title:(NSString*)title imageName:(NSString*)imageName selImageName:(NSString*)selImageName{
     //设置标题
-//    chilidVC.title = title;
+    chilidVC.title = title;
     //设置正常文字颜色
 //    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
 //    dictM[NSFontAttributeName] = AITabBarItemFont;

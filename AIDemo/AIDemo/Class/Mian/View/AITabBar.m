@@ -38,6 +38,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
+        
     }
     return self;
 }
@@ -70,6 +71,11 @@
         btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
         btn.tag   = i;
         
+    }
+    for (id item in self.subviews) {
+        if ([item isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [item removeFromSuperview];
+        }
     }
 
 }
