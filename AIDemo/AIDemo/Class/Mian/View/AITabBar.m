@@ -82,7 +82,6 @@
 - (void)btnOnClick:(AITabBarButton*)btn{
     
     if (!btn.isSelected) {
-        
         btn.selected      = YES;
         _lastBtn.selected = NO;
         _lastBtn          = btn;
