@@ -15,5 +15,5 @@
 @end
 @interface AITabBar : UITabBar
 @property(nonatomic,weak)id<AITabBarDelegate> btnDelegate;
--(void)addTabBarWithNormaName:(NSString*)imageNormalName andImageDisEnableName:(NSString*)imageDisEnableName;
+-(void)addTabBarWithNormaName:(NSString*)imageNormalName andImageDisEnableName:(NSString*)imageDisEnableName andTitle:(NSString*)title;
 @end

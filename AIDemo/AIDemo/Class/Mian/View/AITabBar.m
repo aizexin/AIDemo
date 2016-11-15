@@ -43,7 +43,7 @@
     return self;
 }
 
--(void)addTabBarWithNormaName:(NSString*)imageNormalName andImageDisEnableName:(NSString*)imageDisEnableName{
+-(void)addTabBarWithNormaName:(NSString*)imageNormalName andImageDisEnableName:(NSString*)imageDisEnableName andTitle:(NSString*)title{
     AITabBarButton *btn  = [[AITabBarButton alloc]init];
     //设置正常图片
     UIImage *normalImage = [[UIImage imageNamed:imageNormalName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
@@ -53,7 +53,12 @@
     [btn setImage:selImage forState:(UIControlStateSelected)];
 
     [btn addTarget:self action:@selector(btnOnClick:) forControlEvents:(UIControlEventTouchDown)];
-     [self addSubview:btn];
+    
+    //设置title
+    [btn setTitle:title forState:(UIControlStateSelected)];
+
+    [self addSubview:btn];
+    //添加到自己记录的btnArray里面
     [self.itemArrayM addObject:btn];
 }
 

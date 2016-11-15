@@ -64,7 +64,7 @@
     //添加导航控制器
     AIBaseNavController *navVC = [[AIBaseNavController alloc]initWithRootViewController:chilidVC];
   
-    [self.myTabBar addTabBarWithNormaName:imageName andImageDisEnableName:selImageName];
+    [self.myTabBar addTabBarWithNormaName:imageName andImageDisEnableName:selImageName andTitle:title];
     [self addChildViewController:navVC];
 
 }

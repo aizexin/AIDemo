@@ -21,7 +21,7 @@
     if (self.currentTitle == nil) {
         return [super imageRectForContentRect:contentRect];
     }
-    return CGRectMake(0.5*(btnW - self.currentImage.size.width), 0, self.currentImage.size.width, self.currentImage.size.height);//图片的位置大小
+    return CGRectMake(0.5*(btnW - self.currentImage.size.width), 2, self.currentImage.size.width, self.currentImage.size.height);//图片的位置大小
 }
 
 -(CGRect)titleRectForContentRect:(CGRect)contentRect
@@ -39,7 +39,10 @@
     if (self) {
         [self setUp];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        
+        self.titleLabel.font          = [UIFont fontWithName:@"Avenir-Medium"size:12.];
+        //设置默认title颜色为black
+        [self setTitleColor:[UIColor blackColor] forState:(UIControlStateSelected)];
+        [self setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
         self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
         self.contentVerticalAlignment   = UIControlContentVerticalAlignmentCenter;
     }
@@ -67,9 +70,9 @@
 - (void)scaleAnimation
 {
     POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
-    scaleAnimation.velocity = [NSValue valueWithCGSize:CGSizeMake(3.f, 3.f)];
+    scaleAnimation.velocity = [NSValue valueWithCGSize:CGSizeMake(2.f, 2.f)];
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.f, 1.f)];
-    scaleAnimation.springBounciness = 18.0f;
+    scaleAnimation.springBounciness = 8.0f;
     [self.layer pop_addAnimation:scaleAnimation forKey:@"layerScaleSpringAnimation"];
 }
 
