@@ -10,7 +10,11 @@
 #import "AITabBarButton.h"
 
 @interface AITabBar ()<UITabBarDelegate>
-@property(weak,nonatomic)AITabBarButton *disEnableBtn;
+
+/**
+ 上一个被选中的按钮
+ */
+@property(weak,nonatomic)AITabBarButton *lastBtn;
 
 @property (assign, nonatomic) NSInteger fromeIndex; ///< tabbar之前选中的index
 @property (assign, nonatomic) NSInteger toIndex; ///< tabbar即将选中的index
@@ -46,8 +50,7 @@
     //被选中的图片
     UIImage *selImage    = [[UIImage imageNamed:imageDisEnableName]imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
     [btn setImage:selImage forState:(UIControlStateSelected)];
-//    [btn setBackgroundImage:normalImage forState:(UIControlStateNormal)];
-//    [btn setBackgroundImage:selImage forState:(UIControlStateDisabled)];
+
     [btn addTarget:self action:@selector(btnOnClick:) forControlEvents:(UIControlEventTouchDown)];
      [self addSubview:btn];
     [self.itemArrayM addObject:btn];
@@ -71,11 +74,15 @@
 
 }
 - (void)btnOnClick:(AITabBarButton*)btn{
-    [_disEnableBtn setEnabled:YES];
-    [btn setEnabled:NO];
-    _disEnableBtn = btn;
-    if ([self.btnDelegate respondsToSelector:@selector(tabBarJumpFrom:to:)]) {
-        [_btnDelegate tabBarJumpFrom:_disEnableBtn.tag to:btn.tag];
+    
+    if (!btn.isSelected) {
+        
+        btn.selected      = YES;
+        _lastBtn.selected = NO;
+        _lastBtn          = btn;
+        if ([self.btnDelegate respondsToSelector:@selector(tabBarJumpFrom:to:)]) {
+            [_btnDelegate tabBarJumpFrom:_lastBtn.tag to:btn.tag];
+        }
     }
 }
 
