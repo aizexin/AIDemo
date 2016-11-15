@@ -65,7 +65,7 @@
         CGFloat btnY = 0;
         
         btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
-        btn.tag = i;
+        btn.tag   = i;
         
     }
 
@@ -78,6 +78,8 @@
         [_btnDelegate tabBarJumpFrom:_disEnableBtn.tag to:btn.tag];
     }
 }
+
+
 
 
 @end
