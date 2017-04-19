@@ -26,7 +26,7 @@ UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.view.
 其中SEP是`DKColorTable.txt`文件中的key。如果使用[CocoaPods](https://cocoapods.org/) 导入，需要把`DKColorTable.txt`文件拖到你工程里。想了解跟多了解可以看[成熟的夜间模式解决方案](http://draveness.me/night/)
 
 ###放大转场动画
-![放大专场动画.gif](http://upload-images.jianshu.io/upload_images/1389261-45fd3d4137ac429f.gif?imageMogr2/auto-orient/strip)
+![放大专场动画.gif](https://github.com/aizexin/AIDemo/blob/master/AIDemo/AIDemo/GIF/放大专场动画.gif)
 简单说就是重写`UINavigationControllerDelegate`协议里的方法返回一个自己定义的专场动画
   ```
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
