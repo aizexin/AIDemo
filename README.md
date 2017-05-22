@@ -1,6 +1,8 @@
 #AIDemo
-<h3>这是一个使用三方库的demo，其中有夜间模式，放大圆圈转场，接入环信3.15实现单聊，自动隐藏navgationbar（可实现支付宝首页效果）
-[github](https://github.com/aizexin/AIDemo)[简书](http://www.jianshu.com/p/349a257eaba9)
+<h3>这是一个使用三方库的demo，其中有夜间模式，放大圆圈转场，接入环信3.15实现单聊，自动隐藏navgationbar(可实现支付宝首页效果)
+</h3>
+[github] (https://github.com/aizexin/AIDemo) 
+[简书] (http://www.jianshu.com/p/349a257eaba9)
 
 ----
 
@@ -10,7 +12,7 @@
 + [图标3Dtouch](#图标3Dtouch)
 + [自动隐藏navgationbar](#自动隐藏navgationbar)
 
-###夜间模式
+### 夜间模式
 ![夜间模式.gif](http://upload-images.jianshu.io/upload_images/1389261-6b8904cc4fe31fad.gif?imageMogr2/auto-orient/strip)
 夜间模式我使用的是[DKNightVersion](https://github.com/Draveness/DKNightVersion)最新版本
 设置颜色代码
