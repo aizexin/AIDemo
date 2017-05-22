@@ -27,7 +27,7 @@ UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.view.
 ```
 其中SEP是`DKColorTable.txt`文件中的key。如果使用[CocoaPods](https://cocoapods.org/) 导入，需要把`DKColorTable.txt`文件拖到你工程里。想了解跟多了解可以看[成熟的夜间模式解决方案](http://draveness.me/night/)
 
-###放大转场动画
+### 放大转场动画
 ![放大专场动画.gif](https://github.com/aizexin/AIDemo/blob/master/AIDemo/AIDemo/GIF/放大专场动画.gif)
 简单说就是重写`UINavigationControllerDelegate`协议里的方法返回一个自己定义的专场动画
   ```
@@ -65,7 +65,7 @@ UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.view.
 ```
 详细的可以看[HenryCheng](http://www.jianshu.com/p/8c29fce5a994)的简书
 
-#环信3.15单聊
+# 环信3.15单聊
 ![聊天.gif](http://upload-images.jianshu.io/upload_images/1389261-d9113c46c119a80b.gif?imageMogr2/auto-orient/strip)
 导入[环信](http://docs.easemob.com/im/start)这些基本步骤我就不在这阐述了,目前的官方文档还没有跟新很多方法都没有了。我们直接导入`AppDelegate+EaseMob.h`。然后在`AppDelegate`里加入
 ```
@@ -96,7 +96,7 @@ AIChatSingleViewController *vc = [[AIChatSingleViewController alloc] initWithCon
 EaseEmotionManager * manager = [[EaseEmotionManager alloc] initWithType:EMEmotionDefault emotionRow:3 emotionCol:7 emotions:[EaseEmoji allEmoji]];
     [self.faceView setEmotionManagers:@[manager]];
 ```
-#图标3Dtouch
+# 图标3Dtouch
 设置图标
 ```
 - (void)setup3DTouch
